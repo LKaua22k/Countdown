@@ -28,7 +28,7 @@ main{
     flex-direction: row;
     margin: 10.7rem auto;
     gap: 8.2rem;
-    border: 1px solid black;
+    
 }
 main img{
     width: 60.7rem;
@@ -37,46 +37,56 @@ main img{
 .card{
     display: flex;
     flex-direction: column;
-    width: 49.4rem;
-    border: 1px solid red;
+    width: 44.4rem;
     align-items: center;
 }
 
 .card h1{
     font-size: 3.6rem;
+    text-align: center;
     text-transform: uppercase;
     color: var(--purple);
+    width: 100%;
     font-weight: 700;
     margin-bottom: 1.9rem;
+
 }
 
 ul{
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-left:2.9rem ;
+
 }
 li{
-    margin-right: 6.1rem;
+    
     font-size: 1.4rem;
     font-weight: 300;
 }
 .all{
     display: flex;
     margin-top: 1.9rem;
+    width: 100%;
+    gap:29px;
 }
 
 .dias{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;;
+
 }
+
 .teste{
-    margin-right: 1rem;
+ display: flex;
+ flex-direction: column;
+
+}
+.teste p{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    
+}
+.teste span{
+    margin-left: 5px;
 }
 
 p{
@@ -86,7 +96,7 @@ p{
 
 span{
     font-weight: 400;
-    font-size: 7.2rem;
+    font-size: 7.2rem;   
     
 }
 
