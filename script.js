@@ -1,4 +1,4 @@
-let DataF = new Date("March 16 2023 09:36").getTime();
+let DataF = new Date("June 15 2023 00:00").getTime();
 
 let dias , horas , minutos , segundos;
 
@@ -20,7 +20,7 @@ DataTotal = DataTotal%3600;
 minutos = parseInt(DataTotal/60);
 segundos = parseInt(DataTotal%60);
 
-teste('Days').innerHTML = `${dias}`
+teste('Days').innerHTML = tl(dias)
 teste('Hors').innerHTML = tl(horas) + ':';
 teste('Minutes').innerHTML = tl(minutos) + ':';
 teste('Seconds').innerHTML = tl(segundos);

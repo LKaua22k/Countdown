@@ -14,55 +14,57 @@
     font-size: 62.5%;
   }
 
+body *{
+    font-family: var(--font);
+}
+
 body{
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100vh;
     font-size: 1.6rem;
-    border: 1px solid red ;
+    overflow: hidden;
+}
+
+header{
+    width: 1366px;
+    height: 229px;
 }
 
 main{
     display: flex;
     flex-direction: row;
-    margin: 10.7rem auto;
+    margin: 0 auto;
     gap: 8.2rem;
     
 }
+
 main img{
     width: 60.7rem;
     height: 42.5rem;
 }
+
 .card{
     display: flex;
     flex-direction: column;
-    width: 44.4rem;
+    width: 48.4rem;
     align-items: center;
+    margin-left: 12.3rem;
 }
 
 .card h1{
     font-size: 3.6rem;
+    line-height: 54px;
     text-align: center;
     text-transform: uppercase;
     color: var(--purple);
     width: 100%;
     font-weight: 700;
     margin-bottom: 1.9rem;
-
+    letter-spacing: 0.105em;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-
-}
-li{
-    
-    font-size: 1.4rem;
-    font-weight: 300;
-}
 .all{
     display: flex;
     margin-top: 1.9rem;
@@ -70,42 +72,52 @@ li{
     gap:29px;
 }
 
-.dias{
 
-}
-
-.teste{
- display: flex;
- flex-direction: column;
-
-}
-.teste p{
+.group p{
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-.teste span{
-    margin-left: 5px;
-}
-
-p{
     font-size: 1.4rem;
+    color: var(--light-grey);
     font-weight: 300;
-}
+    line-height: 2.1rem;
 
-span{
+}
+.group span{
+    color:var(--black);
+    margin-left: 5px;
     font-weight: 400;
-    font-size: 7.2rem;   
-    
+    font-size: 7.2rem;      
 }
 
 .text{
+    color: var(--text-color);
     font-size: 1.4rem;
     font-weight: 400;
     margin-top: 4.6rem;
+    line-height: 21px;
 }
 
 button{
+    color:white;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 3.1rem;
+    padding: 10px 3.2rem;
+    border-radius: 10px;
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+    transition: 0.5s;
+}
+button:hover{
+    color: var(--purple);
+    background-color: transparent;
+    border: 1px solid var(--purple);
+    transition: 0.5s;
+}
+
+
+footer{
+    width: 1589.8px;
+    height: 229px;
 }
