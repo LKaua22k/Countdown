@@ -19,38 +19,44 @@ body *{
 }
 
 body{
-    display: flex;
-    flex-direction: column;
+
     width: 100%;
     height: 100vh;
     font-size: 1.6rem;
     overflow: hidden;
 }
 
-header{
-    width: 1366px;
-    height: 229px;
+header img{
+    max-width: 100%;
 }
 
 main{
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    gap: 8.2rem;
-    
+    flex-direction: column;
 }
 
-main img{
-    width: 60.7rem;
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.figure{
+    width:100%;
     height: 42.5rem;
+    background-image: url(./images/rocket.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 .card{
     display: flex;
     flex-direction: column;
-    width: 48.4rem;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    margin-left: 12.3rem;
 }
 
 .card h1{
@@ -65,27 +71,26 @@ main img{
     letter-spacing: 0.105em;
 }
 
-.all{
-    display: flex;
-    margin-top: 1.9rem;
-    width: 100%;
-    gap:29px;
-}
-
-
-.group p{
+.group{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+}
+
+.group p{
     font-size: 1.4rem;
     color: var(--light-grey);
     font-weight: 300;
     line-height: 2.1rem;
-
+    margin-right: 31px;
+    margin-left: 51px;
 }
-.group span{
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color:var(--black);
-    margin-left: 5px;
     font-weight: 400;
     font-size: 7.2rem;      
 }
@@ -116,8 +121,9 @@ button:hover{
     transition: 0.5s;
 }
 
-
 footer{
-    width: 1589.8px;
-    height: 229px;
+    display: flex;
+}
+
+@media (max-width:833px){
 }

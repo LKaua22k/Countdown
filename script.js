@@ -1,12 +1,12 @@
-let DataF = new Date("June 15 2023 00:00").getTime();
+let DataF = new Date("May 29 2023 00:00").getTime();
 
 let dias , horas , minutos , segundos;
 
-function teste(e){
+function dgebi(e){
     return document.getElementById(e)
 }
 
-let tet = setInterval(() =>{
+let Inter = setInterval(() =>{
 let DataA = new Date().getTime();
 
 let DataTotal = (DataF - DataA)/1000;
@@ -20,17 +20,14 @@ DataTotal = DataTotal%3600;
 minutos = parseInt(DataTotal/60);
 segundos = parseInt(DataTotal%60);
 
-teste('Days').innerHTML = tl(dias)
-teste('Hors').innerHTML = tl(horas) + ':';
-teste('Minutes').innerHTML = tl(minutos) + ':';
-teste('Seconds').innerHTML = tl(segundos);
+dgebi('span').innerHTML = `${tl(dias) + ' : ' + tl(horas) + ' : ' + tl(minutos) + ' : ' + tl(segundos)}`
 
 function tl(time){
     return time < 10 ?`0${time}`: time ; 
 }
 
 if(DataTotal <= 0){
-    clearInterval(tet);
+    clearInterval(Inter);
     console.log("OK")
 }
 },1000);
