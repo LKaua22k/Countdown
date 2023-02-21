@@ -95,6 +95,7 @@ span {
   color: var(--black);
   font-weight: 400;
   font-size: 7.2rem;
+  border: 1px solid red;
 }
 
 .text {
