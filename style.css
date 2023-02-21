@@ -1,129 +1,147 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --black: #4D4C59;
-    --purple: #6C63FF;
-    --light-grey: #C8C8C8;
-    --text-color: #9C9AB6;
-    --font:'Poppins', sans-serif;
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+  --font: "Poppins", sans-serif;
 
-    font-size: 62.5%;
-  }
-
-body *{
-    font-family: var(--font);
+  font-size: 62.5%;
 }
 
-body{
-
-    width: 100%;
-    height: 100vh;
-    font-size: 1.6rem;
-    overflow: hidden;
+body * {
+  font-family: var(--font);
 }
 
-header img{
-    max-width: 100%;
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 1.6rem;
+  background-image: url(./images/Countdown.png);
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
-.container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 57%;
+  flex-direction: row;
+  justify-content: flex-end;
 }
 
-.figure{
-    width:100%;
-    height: 42.5rem;
-    background-image: url(./images/rocket.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+.figure {
+  width: 100%;
+  height: 42.5rem;
+  background-image: url(./images/rocket.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.card h1{
-    font-size: 3.6rem;
-    line-height: 54px;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--purple);
-    width: 100%;
-    font-weight: 700;
-    margin-bottom: 1.9rem;
-    letter-spacing: 0.105em;
+.card h1 {
+  font-size: 3.6rem;
+  line-height: 5.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--purple);
+  width: 100%;
+  font-weight: 700;
+  margin-bottom: 1.9rem;
+  letter-spacing: 0.105em;
 }
 
-.group{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+.group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.group p{
-    font-size: 1.4rem;
-    color: var(--light-grey);
-    font-weight: 300;
-    line-height: 2.1rem;
-    margin-right: 31px;
-    margin-left: 51px;
+.group p {
+  font-size: 1.4rem;
+  color: var(--light-grey);
+  font-weight: 300;
+  line-height: 2.1rem;
+  margin-right: 3.1rem;
+  margin-left: 5.1rem;
 }
-span{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color:var(--black);
-    font-weight: 400;
-    font-size: 7.2rem;      
-}
-
-.text{
-    color: var(--text-color);
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-top: 4.6rem;
-    line-height: 21px;
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--black);
+  font-weight: 400;
+  font-size: 7.2rem;
 }
 
-button{
-    color:white;
-    font-size: 16px;
-    font-weight: 400;
-    margin-top: 3.1rem;
-    padding: 10px 3.2rem;
-    border-radius: 10px;
-    background-color: var(--purple);
-    border: 1px solid var(--purple);
-    transition: 0.5s;
-}
-button:hover{
-    color: var(--purple);
-    background-color: transparent;
-    border: 1px solid var(--purple);
-    transition: 0.5s;
+.text {
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-top: 4.6rem;
+  line-height: 21px;
 }
 
-footer{
-    display: flex;
+button {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 3.1rem;
+  padding: 1rem 3.2rem;
+  border-radius: 10px;
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  transition: 0.5s;
+  cursor: pointer;
+}
+button:hover {
+  color: var(--purple);
+  background-color: transparent;
+  border: 1px solid var(--purple);
+  transition: 0.5s;
 }
 
-@media (max-width:833px){
+@media (max-width: 983px) {
+    :root{
+        font-size: 39.5%;
+    }
+
+    .container {
+        height: 64%;
+        flex-direction: column-reverse;
+    }
 }
+@media (max-width: 331px) {
+    :root{
+        font-size: 31.5%;
+    }
+
+    .container {
+        height: 53%;
+        flex-direction: column-reverse;
+    }
+}
+
